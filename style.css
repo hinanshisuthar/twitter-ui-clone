@@ -13,8 +13,9 @@ svg {
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
+    position: relative;
 }
 
 img {
@@ -32,6 +33,10 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
     font-weight: bold;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav > * {
@@ -91,6 +96,11 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 1rem 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.849);
 }
 
 .tweet {
@@ -104,6 +114,7 @@ li {
     border: none;
     padding: 1rem;
     font-size: larger;
+    outline: none;
 }
 
 hr{
@@ -161,6 +172,13 @@ hr{
     width: 1.3rem;
 }
 
+.tweet-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0rem;
+}
+
 /* aside section */
 
 .aside {
@@ -176,9 +194,18 @@ hr{
     border-radius: 2.5rem;
 }
 
+.search-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+}
+
 .search-box {
     border: none;
     font-size: 1rem;
+    outline: none;
 }
 
 .aside .search svg {
