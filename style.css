@@ -26,17 +26,21 @@ img {
 .nav{
     padding-top: 1rem;
     flex-basis: 30%;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(248, 240, 240);
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-weight: bold;
+    /* font-weight: bold; */
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
+}
+
+.nav-links .home {
+    font-weight: bold;
 }
 
 .nav > * {
@@ -81,14 +85,14 @@ li {
     gap: 0.5rem;
     margin-top: auto;
     justify-content: space-between;
+    width: 70%;
 }
 
 /* Main section */
 .main {
     width: 51.5rem;
-    border-right: 1px solid black;
+    border-right: 1px solid rgb(248, 240, 240);
 }
-
 
 .fixed-header {
     /* position: fixed; */
@@ -107,7 +111,7 @@ li {
     padding: 0 1rem 1rem;
     display: flex;
     justify-content: flex-start;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(248, 240, 240);
 }
 
 .new-tweet {
@@ -145,8 +149,14 @@ hr{
     display: flex;
     padding: 1rem;
     gap: 0.5rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(248, 240, 240)ack;
     align-items: flex-start;
+    color: rgb(87, 85, 85);
+}
+
+.tweet-center h4 {
+    color: #000;
+    font-weight: 600;
 }
 
 .tweet-center {
@@ -179,6 +189,15 @@ hr{
     gap: 0rem;
 }
 
+.like {
+    color: rgb(249, 24, 128);
+}
+
+.retweet {
+    color: rgb(0, 186, 124)
+}
+
+
 /* aside section */
 
 .aside {
@@ -190,8 +209,9 @@ hr{
     justify-content: flex-start;
     align-items: center;
     padding: 0.7rem 0.8rem;
-    border: 1px solid black;
+    border: 1px solid rgb(248, 240, 240);
     border-radius: 2.5rem;
+    background-color: rgb(235, 241, 245);
 }
 
 .search-container {
@@ -199,13 +219,13 @@ hr{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(255, 255, 255);
 }
 
 .search-box {
     border: none;
     font-size: 1rem;
     outline: none;
+    background-color: transparent;
 }
 
 .aside .search svg {
@@ -219,8 +239,9 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid black;
+    border: 1px solid rgb(248, 240, 240);
     border-radius: 1.5rem;
+    background-color: rgb(240, 247, 251);
 }
 
 .aside-card h3 {
@@ -268,12 +289,13 @@ hr{
 .suggestions button {
     padding: 0.5rem 1.1rem;
     font-weight: bold;
-    background-color: #fff;
-    border: 1px solid black;
+    color: #fff;
+    border: 1px solid rgb(248, 240, 240);
     border-radius: 1rem;
     text-transform: capitalize;
     margin-left: auto;
     font-size: 0.9rem;
+    background-color: #000;
 }
 
 .footer{
@@ -298,3 +320,6 @@ hr{
 .copywrite {
     display: block;
 }
+
+
+/* colored svgs */
